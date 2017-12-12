@@ -25,6 +25,7 @@ describe "Testing out Euler's problem number 1" do
 
   it "adds all the numbers in the array" do
     @euler.add_number_to_array(1, 6)
+    p @euler.euler_array
 
     expect(@euler.addall).to eq 8
   end
