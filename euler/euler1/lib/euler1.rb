@@ -11,7 +11,7 @@ class Euler1
   end
 
   def add_number_to_array(range_start, range_to)
-    (range_start..range_to-1).each do |x|
+    (range_start...range_to).each do |x|
       if divisible_by?(x, 3)
         @euler_array.push(x)
       elsif divisible_by?(x, 5)
@@ -21,10 +21,6 @@ class Euler1
   end
 
   def addall
-    sum = 0
-    @euler_array.each do |num|
-      sum += num
-    end
-    sum
+    @euler_array.sum
   end
 end

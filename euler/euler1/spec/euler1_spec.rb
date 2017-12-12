@@ -23,9 +23,13 @@ describe "Testing out Euler's problem number 1" do
     expect(@euler.euler_array[1]).to eq 5
   end
 
+  it "should respond to an Array" do
+    expect(@euler.euler_array).to be_kind_of(Array)
+  end
+
   it "adds all the numbers in the array" do
     @euler.add_number_to_array(1, 6)
-    p @euler.euler_array
+    # p @euler.euler_array
 
     expect(@euler.addall).to eq 8
   end
