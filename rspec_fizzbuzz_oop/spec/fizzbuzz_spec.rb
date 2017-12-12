@@ -29,6 +29,4 @@ describe Fizzbuzz do
     expect(@fizzbuzz.fizzbuzz_array[4]).to eq "Buzz"
     expect(@fizzbuzz.fizzbuzz_array[-1]).to eq "FizzBuzz"
   end
-
-
 end
