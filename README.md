@@ -15,12 +15,16 @@ See http://rspec.info/documentation/ for links to documentation on all gems.
 
 To use it you need to install the gem rspec
 
->gem install rspec
-
+```Ruby
+gem install rspec
+```
 ## Setup
 
 To setup rspec, you need to initialise it in the terminal.
->rspec --init
+
+```Ruby
+rspec --init
+```
 
 ## Fizzbuzz
 
