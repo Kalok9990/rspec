@@ -26,6 +26,34 @@ To setup rspec, you need to initialise it in the terminal.
 rspec --init
 ```
 
+## Run the tests
+
+To run the tests, in the terminal, make sure are in the folder with 'spec' folder in, and then enter the command.
+```
+rspec
+```
+
+This will automatically run the tests that have been defined in that folder.
+
+## How to add tests
+
+In the spec folder, you will see all the files that contain the tests. To make a new file, you will need to make sure that there is spec in the file name (ie 'name_spec.rb'). In the file you will need to require spec_helper and below is a general format of how the tests are made.
+```Ruby
+require 'spec_helper'
+
+describe Name_of_Application do
+
+  context 'Description of what you are trying to test' do
+
+    it "description of what the test is for" do
+
+    end
+  end
+end
+```
+
+The `it` block is where the majority of test code is written in. you can have as many `it` blocks as you want, where each one runs a different test.
+
 ## Fizzbuzz
 
 There are two Fizzbuzz folders. 'FizzBuzz' was the first exercise, where I attempted to test fizzbuzz without the use of Object Oriented Programming (OOP) and that proved to be very difficult so the file doesnt actually work. The second folder is where I incorporated OOP into fizzbuzz and this was a lot easier to test, as I had methods and classes that I was able to access and test.
